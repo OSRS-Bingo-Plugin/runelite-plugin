@@ -2,6 +2,7 @@
 .gradle/
 build/
 out/
+*.class
 
 # IntelliJ / Eclipse
 .idea/
@@ -18,3 +19,4 @@ bin/
 
 # Logs / local
 *.log
+.superpowers/

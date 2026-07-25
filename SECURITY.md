@@ -13,10 +13,11 @@ time for a fix before any public disclosure.
 
 This is a RuneLite plugin. It:
 
-- talks **only** to the bingo backend URL configured in its settings — no other
+- talks **only** to its fixed bingo backend (a single hardcoded URL) — no other
   network calls, analytics, or third-party services;
-- stores the team **board code** locally via RuneLite config (masked) and sends it
-  only to that configured backend;
+- makes no network request at all until the user enters a team **board code**;
+- stores that board code locally via RuneLite config (masked) and sends it only
+  to that backend;
 - sends a screenshot only as drop proof, and only when the user enables it.
 
 Reports of the plugin contacting anything other than its configured backend, or
